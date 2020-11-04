@@ -222,6 +222,7 @@ nav {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  outline: none;
 }
 .nav-toggle:hover {
   color: var(--clr-secondary);
@@ -294,8 +295,9 @@ nav {
 /* hero */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./hero-bcg.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(63, 208, 212, 0.5),
+    rgba(0, 0, 0, 0.7)),
+    url(../img/hero-bg.jpeg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
