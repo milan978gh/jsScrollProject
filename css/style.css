@@ -35,7 +35,7 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-secondary: hsla(182, 63%, 54%);
+  --clr-secondary: #40cfd4;
   --clr-black: #222;
   --ff-primary: Georgia, serif;
   --ff-secondary: Tahoma, sans-serif;
@@ -190,7 +190,7 @@ Scroll
 /* navbar */
 nav {
   background: var(--clr-white);
-  padding: .5rem 1.5rem;
+  padding: .1rem 1.5rem;
 }
 /* fixed nav */
 .fixed-nav {
@@ -206,9 +206,6 @@ nav {
 }
 .fixed-nav .links a:hover {
   color: var(--clr-secondary);
-}
-.fixed-nav .links-container {
-  height: auto !important;
 }
 .nav-header {
   display: flex;
@@ -236,7 +233,8 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  /* height: fit-content; for classList.toggle() metod */
+  /* height: fit-content; ZA classList.toggle() metod */
+  height: 200px;
 }
 .links a {
   background: var(--clr-white);
@@ -353,7 +351,6 @@ footer p {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  /* animation: bounce 2s ease-in-out infinite; */
   visibility: hidden;
   z-index: -100;
 }
@@ -361,15 +358,3 @@ footer p {
   visibility: visible;
   z-index: 100;
 }
-
-/* @keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
