@@ -234,7 +234,7 @@ nav {
 }
 .show-links {
   /* height: fit-content; ZA classList.toggle() metod */
-  height: 200px;
+  height: fit-content;
 }
 .links a {
   background: var(--clr-white);
